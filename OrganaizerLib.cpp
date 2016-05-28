@@ -23,7 +23,7 @@ OrganizerLib::OrganizerLib()
     modifiedCalendar = false;
 }
 
-void OrganizerLib::loadCalendarMap()
+void OrganizerLib::loadCalendarMap()    //help function for work with base
 {
     ifstream n_file;
     string buff;
@@ -69,7 +69,7 @@ void OrganizerLib::loadCalendarMap()
     n_file.close();
 }
 
-int OrganizerLib::printMap( Filtr *filtr )
+int OrganizerLib::printMap( Filtr *filtr )      //main function for printing
 {
     int result=0;
     
@@ -96,7 +96,7 @@ int OrganizerLib::printMap( Filtr *filtr )
     return result;
 }
 
-int OrganizerLib::deleteMap( Filtr *filtr )
+int OrganizerLib::deleteMap( Filtr *filtr )             //main function for deleting
 {
     int result = 0;
     for(map<time_t, Event>::iterator it=mymap.begin(); it!= mymap.end();)
