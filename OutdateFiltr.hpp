@@ -16,7 +16,7 @@ using namespace std;
 class OutdateFiltr : public Filtr
 {
 public:
-    bool doFiltr( Event *rec ) override;
+    bool doFiltr( Event *rec );
 };
 
 #endif /* OutdateFiltr_hpp */
