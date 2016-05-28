@@ -16,7 +16,7 @@ using namespace std;
 
 OrganizerLib app = *new OrganizerLib();
 
-void showTime()
+void showTime()         //funktion for now time
 {
     cout<<"\n";
     cout<<"Hello! This is your new organizer. \n";
@@ -83,7 +83,7 @@ void doFunc(int countMenu)
     }
 }
 
-void putNumber()
+void putNumber()        //help funktion for "doFunc"
 {
     int countMenu = (-1);
     while(countMenu != 0)
