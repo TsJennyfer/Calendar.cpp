@@ -31,6 +31,8 @@ void printMenu()
     string buff;
     ifstream new_file;
     new_file.open( filename );
+    if( !new_file.good() )
+        cout<<"ERROR. Can not find \"menu.txt\" ";
     while(new_file.good())
     {
         getline(new_file, buff);

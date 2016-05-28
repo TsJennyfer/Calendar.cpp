@@ -20,7 +20,7 @@ private:
     string search;
 public:
     CategoryFiltr ( string searchCategory );
-    bool doFiltr(Event *rec) override;
+    bool doFiltr(Event *rec);
 };
 
 #endif /* CategoryFiltr_hpp */

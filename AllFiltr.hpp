@@ -17,7 +17,7 @@ using namespace std;
 class AllFiltr : public Filtr
 {
 public:
-    bool doFiltr(Event *rec) override;
+    bool doFiltr(Event *rec);
 };
 
 #endif /* AllFiltr_hpp */

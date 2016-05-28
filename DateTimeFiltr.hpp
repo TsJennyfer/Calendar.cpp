@@ -19,7 +19,7 @@ private:
     time_t search;
 public:
     DateTimeFiltr ( time_t searchTime );
-    bool doFiltr( Event *rec ) override;
+    bool doFiltr( Event *rec );
 };
 
 
