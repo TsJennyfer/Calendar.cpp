@@ -11,7 +11,8 @@
 #include "OrganaizerLib.hpp"
 using namespace std;
 
-const string filename = "/Users/jn/Documents/projects/Calendar.cpp/menu.txt";
+//const string filename = "/Users/jn/Documents/projects/Calendar.cpp/menu.txt";
+//const string filename = "menu.txt";
 
 OrganizerLib app = *new OrganizerLib();
 

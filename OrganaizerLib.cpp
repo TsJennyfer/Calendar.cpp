@@ -15,8 +15,8 @@
 #include <iostream>
 #include <vector>
 
-const string filename = "/Users/jn/Documents/projects/Calendar.cpp/timetable.txt";
-//const string filename = "~/Documents/projects/Calendar.cpp/timetable.txt";
+//const string filename = "/Users/jn/Documents/projects/Calendar.cpp/timetable.txt";
+//const string filename = "timetable.txt";
 
 OrganizerLib::OrganizerLib()
 {
