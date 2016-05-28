@@ -27,8 +27,9 @@ class OrganizerLib
 {
 private:
     map <time_t, Event> mymap;
-    bool modifiedCalendar = false;
+    bool modifiedCalendar;
 public:
+    OrganizerLib();
     void loadCalendarMap();
     int printMap( Filtr *filtr );
     void printAll();

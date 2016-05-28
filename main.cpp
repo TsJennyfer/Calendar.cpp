@@ -11,7 +11,7 @@
 #include "OrganaizerLib.hpp"
 using namespace std;
 
-const string filename = "/Users/jn/Documents/study/po/OrganizerCpp/menu.txt";
+//const string filename = "/Users/jn/Documents/study/po/OrganizerCpp/menu.txt";
 
 OrganizerLib app = *new OrganizerLib();
 
@@ -30,7 +30,7 @@ void printMenu()
 {
     string buff;
     ifstream new_file;
-    new_file.open( filename );
+    new_file.open( "menu.txt" );
     while(new_file.good())
     {
         getline(new_file, buff);

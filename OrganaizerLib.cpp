@@ -15,13 +15,18 @@
 #include <iostream>
 #include <vector>
 
-const string filename = "/Users/jn/Documents/study/po/OrganizerCpp/timetable.txt";
+//const string filename = "/Users/jn/Documents/study/po/OrganizerCpp/timetable.txt";
+
+OrganizerLib::OrganizerLib()
+{
+    modifiedCalendar = false;
+}
 
 void OrganizerLib::loadCalendarMap()
 {
     ifstream n_file;
     string buff;
-    n_file.open(filename);
+    n_file.open( "timetable.txt" );
     if( !n_file.good() )
         cout<<"ERROR. Can not find \"timetable.txt\" ";
     while(n_file.good())
@@ -342,7 +347,7 @@ void OrganizerLib::saveFile()
 {
     ofstream n_file;
     string buff;
-    n_file.open(filename);
+    n_file.open( "timetable.txt" );
     for(map<time_t, Event>::iterator it=mymap.begin(); it!= mymap.end(); ++it)
     {
         char s[100];
