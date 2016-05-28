@@ -15,7 +15,7 @@
 #include <iostream>
 #include <vector>
 
-const string filename = "/Users/jn/Documents/study/po/OrganizerCpp/timetable.txt";
+const string filename = "/Users/jn/Documents/projects/Calendar.cpp/timetable.txt";
 
 void OrganizerLib::loadCalendarMap()
 {
@@ -139,7 +139,8 @@ void OrganizerLib::deleteByTime()
     int res = deleteMap( &df );
     if( res == 0 )
        cout<<"You have not got any event in this time. \n ";
-    else cout<<"Your event deleted. \n";
+    else
+        cout<<"Your event deleted. \n";
 }
 
 void OrganizerLib::printAll()
