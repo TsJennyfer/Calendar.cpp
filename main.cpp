@@ -43,17 +43,18 @@ void printMenu()
     cout<<"1 - print menu \n";
     cout<<"2 - show activity for now (8 hours) \n";
     cout<<"3 - add event \n";
-    cout<<"4 - search by time \n";
-    cout<<"5 - remove specified by time \n";
-    cout<<"6 - show all activities in this category \n";
-    cout<<"7 - save all \n";
-    cout<<"8 - print all \n";
+    cout<<"4 - search by date \n";
+    cout<<"5 - search by time \n";
+    cout<<"6 - remove specified by time \n";
+    cout<<"7 - show all activities in this category \n";
+    cout<<"8 - save all \n";
+    cout<<"9 - print all \n";
     cout<<"0 - exit \n";
 }
 
-void doFunc(int countMenu)
+void doFunc(int nMenu)
 {
-    switch(countMenu)
+    switch(nMenu)
     {
         case 1:
             printMenu();
@@ -70,22 +71,27 @@ void doFunc(int countMenu)
         case 4:
             app.searchByDate();
             break;
-            
+        
         case 5:
+            app.searchByTime();
+            break;
+        
+        case 6:
             app.deleteByTime();
             break;
             
-        case 6:
+        case 7:
             app.searchByCategory();
             break;
             
-        case 7:
+        case 8:
             app.saveFile();
             break;
             
-        case 8:
+        case 9:
             app.printAll();
             break;
+
         case 0:
             app.checkChanges();
             break;
@@ -95,15 +101,15 @@ void doFunc(int countMenu)
 //help funktion for "doFunc"
 void putNumber()
 {
-    int countMenu = (-1);
-    while(countMenu != 0)
+    int nMenu = (-1);
+    while(nMenu != 0)
     {
-        countMenu = (-1);
+        nMenu = (-1);
         cout<<"Put your number: ";
         string puts;
         getline(cin, puts);
-        sscanf(puts.c_str(), "%d", &countMenu);
-        doFunc(countMenu);
+        sscanf(puts.c_str(), "%d", &nMenu);
+        doFunc(nMenu);
     }
 }
 

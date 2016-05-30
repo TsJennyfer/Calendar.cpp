@@ -1,4 +1,6 @@
-﻿Party|14/05/2016 18:00|180|grandma
+party|14/05/2016 18:00|180|grandma
+sport|30/05/2016 22:00|120|zumba maraton
+study|31/05/2016 15:00|120|do math homwework
 friends|14/06/2016 18:00|180|date with Rob
 party|15/06/2016 14:05|120|buy new dress
 sport|16/06/2016 15:00|60|go to the gim
@@ -26,4 +28,3 @@ party|30/06/2016 17:00|90|school concert
 friends|01/07/2016 19:00|240|Star Wars marafon with friends
 party|24/09/2016 15:00|120|Daria
 party|26/10/2016 14:00|180|birthday
-sport|23/12/2016 23:00|120|yoga

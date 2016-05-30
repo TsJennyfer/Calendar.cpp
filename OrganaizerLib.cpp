@@ -112,6 +112,50 @@ int OrganizerLib::deleteMap( Filtr *filtr )
     return result;
 }
 
+void OrganizerLib::searchByTime()
+{
+    time_t dateSearch;
+    tm dateInput;
+    memset(&dateInput, 0, sizeof(tm));
+    
+    cout<<"Put date and time of searching event(dd/mm/yyyy hh:mm): ";
+    string puts;
+    getline(cin, puts);
+    
+    if("c" == puts)
+    return;
+    
+    sscanf(puts.c_str(), "%d/%d/%d  %d:%d",
+           &dateInput.tm_mday,
+           &dateInput.tm_mon,
+           &dateInput.tm_year,
+           &dateInput.tm_hour,
+           &dateInput.tm_min
+    );
+    dateInput.tm_mon = dateInput.tm_mon - 1 ;
+    dateInput.tm_year = dateInput.tm_year - 1900;
+    dateInput.tm_isdst = 1;
+    dateSearch = mktime(&dateInput);
+    int res = 0;
+    for(map<time_t, Event>::iterator it=mymap.begin(); it!= mymap.end(); ++it)
+    {
+        if(it->first == dateSearch)
+        {
+            DateTimeFiltr df = DateTimeFiltr(dateSearch);
+            res = printMap( &df );
+            return;
+        }
+        else if(it->first < dateSearch && dateSearch <= (it->first+(it->second.len*60)))
+        {
+            DateTimeFiltr df = DateTimeFiltr(it->first);
+            res = printMap( &df );
+            return;
+        }
+    }
+    if( res == 0 )
+        cout<<"You have not got any event in this time. \n";
+}
+
 void OrganizerLib::deleteByTime()
 {
     time_t dateDelete;
@@ -140,7 +184,7 @@ void OrganizerLib::deleteByTime()
     DateTimeFiltr df = DateTimeFiltr(dateDelete);
     int res = deleteMap( &df );
     if( res == 0 )
-       cout<<"You have not got any event in this time. \n ";
+        cout<<"You have not got any event in this time. \n";
     else
         cout<<"Your event deleted. \n";
 }
@@ -150,7 +194,7 @@ void OrganizerLib::printAll()
     AllFiltr af = AllFiltr();
     int res = printMap( &af );
     if( res == 0 )
-        cout<<"You have not got any event. \n ";
+        cout<<"You have not got any event. \n";
 }
 
 void OrganizerLib::workWithOutdate()
@@ -227,7 +271,7 @@ void OrganizerLib::searchByDate()
     DateFiltr df = DateFiltr(dateSearch);
     int res = printMap( &df );
     if( res == 0 )
-        cout<<"You have not got any event on this date. \n ";
+        cout<<"You have not got any event on this date. \n";
 }
 
 void OrganizerLib::nowEvents()

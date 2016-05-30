@@ -37,6 +37,7 @@ public:
     void printAll();
     void addEvent();
     void searchByDate();
+    void searchByTime();
     void deleteByTime();
     void searchByCategory();
     void saveFile();
