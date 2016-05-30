@@ -9,9 +9,8 @@
 #ifndef Event_hpp
 #define Event_hpp
 
-#include <stdio.h>
 #include <iostream>
-#include <string.h>
+
 using namespace std;
 
 class Event

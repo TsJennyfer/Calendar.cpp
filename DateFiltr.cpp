@@ -7,9 +7,7 @@
 //
 
 #include "DateFiltr.hpp"
-#include <string.h>
- #include <iostream>
- #include <stdio.h>
+
 using namespace std;
  
 DateFiltr::DateFiltr( time_t searchDate )

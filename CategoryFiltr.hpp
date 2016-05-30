@@ -9,9 +9,8 @@
 #ifndef CategoryFiltr_hpp
 #define CategoryFiltr_hpp
 
-#include <stdio.h>
-#include <string>
 #include "Filtr.hpp"
+
 using namespace std;
 
 class CategoryFiltr : public Filtr

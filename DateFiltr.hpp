@@ -9,8 +9,8 @@
 #ifndef DateFiltr_hpp
 #define DateFiltr_hpp
 
-#include <stdio.h>
 #include "Filtr.hpp"
+
 using namespace std;
 
 class DateFiltr : public Filtr

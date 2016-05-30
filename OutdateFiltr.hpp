@@ -9,8 +9,8 @@
 #ifndef OutdateFiltr_hpp
 #define OutdateFiltr_hpp
 
-#include <stdio.h>
 #include "Filtr.hpp"
+
 using namespace std;
 
 class OutdateFiltr : public Filtr

@@ -9,8 +9,8 @@
 #ifndef NowFiltr_hpp
 #define NowFiltr_hpp
 
-#include <stdio.h>
 #include "Filtr.hpp"
+
 using namespace std;
 
 class NowFiltr : public Filtr

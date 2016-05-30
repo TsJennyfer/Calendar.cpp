@@ -9,10 +9,11 @@
 #ifndef OrganaizerLib_hpp
 #define OrganaizerLib_hpp
 
-#include <stdio.h>
-#include <locale.h>
-#include <time.h>
 #include <map>
+#include <fstream>
+#include <vector>
+#include <string>
+
 #include "Event.hpp"
 #include "Filtr.hpp"
 #include "AllFiltr.hpp"
@@ -21,6 +22,7 @@
 #include "NowFiltr.hpp"
 #include "DateFiltr.hpp"
 #include "DateTimeFiltr.hpp"
+
 using namespace std;
 
 class OrganizerLib

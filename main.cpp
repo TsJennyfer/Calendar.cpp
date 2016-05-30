@@ -6,17 +6,14 @@
 //  Copyright © 2016 Yevheniia Tsapkova. All rights reserved.
 //
 
-#include <iostream>
-#include <fstream>
 #include "OrganaizerLib.hpp"
-using namespace std;
 
-//const string filename = "/Users/jn/Documents/projects/Calendar.cpp/menu.txt";
-//const string filename = "menu.txt";
+using namespace std;
 
 OrganizerLib app = *new OrganizerLib();
 
-void showTime()         //funktion for now time
+//funktion for now time
+void showTime()
 {
     cout<<"\n";
     cout<<"Hello! This is your new organizer. \n";
@@ -29,9 +26,9 @@ void showTime()         //funktion for now time
 
 void printMenu()
 {
-    string buff;
+    /*string buff;
     ifstream new_file;
-    new_file.open( filename );
+    new_file.open( "menu.txt" );
     if( !new_file.good() )
         cout<<"ERROR. Can not find \"menu.txt\" ";
     while(new_file.good())
@@ -39,7 +36,19 @@ void printMenu()
         getline(new_file, buff);
         cout<<buff<<"\n";
     }
-    new_file.close();
+    new_file.close();*/
+    
+    cout<<"You can press: \n";
+    cout<<"c - exit to main menu \n";
+    cout<<"1 - print menu \n";
+    cout<<"2 - show activity for now (8 hours) \n";
+    cout<<"3 - add event \n";
+    cout<<"4 - search by time \n";
+    cout<<"5 - remove specified by time \n";
+    cout<<"6 - show all activities in this category \n";
+    cout<<"7 - save all \n";
+    cout<<"8 - print all \n";
+    cout<<"0 - exit \n";
 }
 
 void doFunc(int countMenu)
@@ -83,7 +92,8 @@ void doFunc(int countMenu)
     }
 }
 
-void putNumber()        //help funktion for "doFunc"
+//help funktion for "doFunc"
+void putNumber()
 {
     int countMenu = (-1);
     while(countMenu != 0)

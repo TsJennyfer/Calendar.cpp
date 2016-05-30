@@ -7,9 +7,7 @@
 //
 
 #include "OutdateFiltr.hpp"
-#include <string.h>
-#include <iostream>
-#include <stdio.h>
+
 using namespace std;
 
 bool OutdateFiltr::doFiltr( Event *rec )

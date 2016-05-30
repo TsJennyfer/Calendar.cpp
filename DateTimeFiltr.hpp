@@ -9,8 +9,8 @@
 #ifndef DateTimeFiltr_hpp
 #define DateTimeFiltr_hpp
 
-#include <stdio.h>
 #include "Filtr.hpp"
+
 using namespace std;
 
 class DateTimeFiltr : public Filtr

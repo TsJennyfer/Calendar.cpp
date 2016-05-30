@@ -7,15 +7,8 @@
 //
 
 #include "OrganaizerLib.hpp"
-#include <fstream>
-#include <vector>
-#include <string.h>
-#include <string>
-#include <sstream>
-#include <iostream>
-#include <vector>
 
-//const string filename = "/Users/jn/Documents/projects/Calendar.cpp/timetable.txt";
+const string filename = "/Users/jn/Documents/projects/Calendar.cpp/timetable.txt";
 //const string filename = "timetable.txt";
 
 OrganizerLib::OrganizerLib()
@@ -23,7 +16,8 @@ OrganizerLib::OrganizerLib()
     modifiedCalendar = false;
 }
 
-void OrganizerLib::loadCalendarMap()    //help function for work with base
+//help function for work with base
+void OrganizerLib::loadCalendarMap()
 {
     ifstream n_file;
     string buff;
@@ -69,7 +63,8 @@ void OrganizerLib::loadCalendarMap()    //help function for work with base
     n_file.close();
 }
 
-int OrganizerLib::printMap( Filtr *filtr )      //main function for printing
+//main function for printing
+int OrganizerLib::printMap( Filtr *filtr )
 {
     int result=0;
     
@@ -96,7 +91,8 @@ int OrganizerLib::printMap( Filtr *filtr )      //main function for printing
     return result;
 }
 
-int OrganizerLib::deleteMap( Filtr *filtr )             //main function for deleting
+//main function for deleting
+int OrganizerLib::deleteMap( Filtr *filtr )
 {
     int result = 0;
     for(map<time_t, Event>::iterator it=mymap.begin(); it!= mymap.end();)

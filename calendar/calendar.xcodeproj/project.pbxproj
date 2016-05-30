@@ -7,11 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A860A1B61CF9BB8C00B94BB6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A860A1B51CF9BB8C00B94BB6 /* main.cpp */; };
+		A860A21F1CF9CFBE00B94BB6 /* AllFiltr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A860A21D1CF9CFBE00B94BB6 /* AllFiltr.cpp */; };
+		A860A22B1CF9CFC800B94BB6 /* CategoryFiltr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A860A2201CF9CFC800B94BB6 /* CategoryFiltr.cpp */; };
+		A860A22C1CF9CFC800B94BB6 /* DateFiltr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A860A2221CF9CFC800B94BB6 /* DateFiltr.cpp */; };
+		A860A22D1CF9CFC800B94BB6 /* DateTimeFiltr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A860A2241CF9CFC800B94BB6 /* DateTimeFiltr.cpp */; };
+		A860A22E1CF9CFC800B94BB6 /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A860A2261CF9CFC800B94BB6 /* Event.cpp */; };
+		A860A22F1CF9CFC800B94BB6 /* Filtr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A860A2281CF9CFC800B94BB6 /* Filtr.cpp */; };
+		A860A2301CF9CFC800B94BB6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A860A22A1CF9CFC800B94BB6 /* main.cpp */; };
+		A860A2371CF9CFD200B94BB6 /* NowFiltr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A860A2311CF9CFD200B94BB6 /* NowFiltr.cpp */; };
+		A860A2381CF9CFD200B94BB6 /* OrganaizerLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A860A2331CF9CFD200B94BB6 /* OrganaizerLib.cpp */; };
+		A860A2391CF9CFD200B94BB6 /* OutdateFiltr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A860A2351CF9CFD200B94BB6 /* OutdateFiltr.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A860A1B01CF9BB8C00B94BB6 /* CopyFiles */ = {
+		A860A2111CF9CFB600B94BB6 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +32,32 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A860A1B21CF9BB8C00B94BB6 /* calendar */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = calendar; sourceTree = BUILT_PRODUCTS_DIR; };
-		A860A1B51CF9BB8C00B94BB6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A860A2131CF9CFB600B94BB6 /* Calendar */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Calendar; sourceTree = BUILT_PRODUCTS_DIR; };
+		A860A21D1CF9CFBE00B94BB6 /* AllFiltr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AllFiltr.cpp; path = ../../AllFiltr.cpp; sourceTree = "<group>"; };
+		A860A21E1CF9CFBE00B94BB6 /* AllFiltr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = AllFiltr.hpp; path = ../../AllFiltr.hpp; sourceTree = "<group>"; };
+		A860A2201CF9CFC800B94BB6 /* CategoryFiltr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CategoryFiltr.cpp; path = ../../CategoryFiltr.cpp; sourceTree = "<group>"; };
+		A860A2211CF9CFC800B94BB6 /* CategoryFiltr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = CategoryFiltr.hpp; path = ../../CategoryFiltr.hpp; sourceTree = "<group>"; };
+		A860A2221CF9CFC800B94BB6 /* DateFiltr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DateFiltr.cpp; path = ../../DateFiltr.cpp; sourceTree = "<group>"; };
+		A860A2231CF9CFC800B94BB6 /* DateFiltr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DateFiltr.hpp; path = ../../DateFiltr.hpp; sourceTree = "<group>"; };
+		A860A2241CF9CFC800B94BB6 /* DateTimeFiltr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DateTimeFiltr.cpp; path = ../../DateTimeFiltr.cpp; sourceTree = "<group>"; };
+		A860A2251CF9CFC800B94BB6 /* DateTimeFiltr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = DateTimeFiltr.hpp; path = ../../DateTimeFiltr.hpp; sourceTree = "<group>"; };
+		A860A2261CF9CFC800B94BB6 /* Event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Event.cpp; path = ../../Event.cpp; sourceTree = "<group>"; };
+		A860A2271CF9CFC800B94BB6 /* Event.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Event.hpp; path = ../../Event.hpp; sourceTree = "<group>"; };
+		A860A2281CF9CFC800B94BB6 /* Filtr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Filtr.cpp; path = ../../Filtr.cpp; sourceTree = "<group>"; };
+		A860A2291CF9CFC800B94BB6 /* Filtr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Filtr.hpp; path = ../../Filtr.hpp; sourceTree = "<group>"; };
+		A860A22A1CF9CFC800B94BB6 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../main.cpp; sourceTree = "<group>"; };
+		A860A2311CF9CFD200B94BB6 /* NowFiltr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = NowFiltr.cpp; path = ../../NowFiltr.cpp; sourceTree = "<group>"; };
+		A860A2321CF9CFD200B94BB6 /* NowFiltr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = NowFiltr.hpp; path = ../../NowFiltr.hpp; sourceTree = "<group>"; };
+		A860A2331CF9CFD200B94BB6 /* OrganaizerLib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OrganaizerLib.cpp; path = ../../OrganaizerLib.cpp; sourceTree = "<group>"; };
+		A860A2341CF9CFD200B94BB6 /* OrganaizerLib.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = OrganaizerLib.hpp; path = ../../OrganaizerLib.hpp; sourceTree = "<group>"; };
+		A860A2351CF9CFD200B94BB6 /* OutdateFiltr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = OutdateFiltr.cpp; path = ../../OutdateFiltr.cpp; sourceTree = "<group>"; };
+		A860A2361CF9CFD200B94BB6 /* OutdateFiltr.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = OutdateFiltr.hpp; path = ../../OutdateFiltr.hpp; sourceTree = "<group>"; };
+		A860A23A1CF9E1D100B94BB6 /* menu.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = menu.txt; path = ../../menu.txt; sourceTree = "<group>"; };
+		A860A23B1CF9E1D900B94BB6 /* timetable.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = timetable.txt; path = ../../timetable.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A860A1AF1CF9BB8C00B94BB6 /* Frameworks */ = {
+		A860A2101CF9CFB600B94BB6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,94 +67,123 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A860A1A91CF9BB8C00B94BB6 = {
+		A860A20A1CF9CFB600B94BB6 = {
 			isa = PBXGroup;
 			children = (
-				A860A1B41CF9BB8C00B94BB6 /* calendar */,
-				A860A1B31CF9BB8C00B94BB6 /* Products */,
+				A860A2151CF9CFB600B94BB6 /* Calendar */,
+				A860A2141CF9CFB600B94BB6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A860A1B31CF9BB8C00B94BB6 /* Products */ = {
+		A860A2141CF9CFB600B94BB6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A860A1B21CF9BB8C00B94BB6 /* calendar */,
+				A860A2131CF9CFB600B94BB6 /* Calendar */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A860A1B41CF9BB8C00B94BB6 /* calendar */ = {
+		A860A2151CF9CFB600B94BB6 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
-				A860A1B51CF9BB8C00B94BB6 /* main.cpp */,
+				A860A23B1CF9E1D900B94BB6 /* timetable.txt */,
+				A860A23A1CF9E1D100B94BB6 /* menu.txt */,
+				A860A2311CF9CFD200B94BB6 /* NowFiltr.cpp */,
+				A860A2321CF9CFD200B94BB6 /* NowFiltr.hpp */,
+				A860A2331CF9CFD200B94BB6 /* OrganaizerLib.cpp */,
+				A860A2341CF9CFD200B94BB6 /* OrganaizerLib.hpp */,
+				A860A2351CF9CFD200B94BB6 /* OutdateFiltr.cpp */,
+				A860A2361CF9CFD200B94BB6 /* OutdateFiltr.hpp */,
+				A860A2201CF9CFC800B94BB6 /* CategoryFiltr.cpp */,
+				A860A2211CF9CFC800B94BB6 /* CategoryFiltr.hpp */,
+				A860A2221CF9CFC800B94BB6 /* DateFiltr.cpp */,
+				A860A2231CF9CFC800B94BB6 /* DateFiltr.hpp */,
+				A860A2241CF9CFC800B94BB6 /* DateTimeFiltr.cpp */,
+				A860A2251CF9CFC800B94BB6 /* DateTimeFiltr.hpp */,
+				A860A2261CF9CFC800B94BB6 /* Event.cpp */,
+				A860A2271CF9CFC800B94BB6 /* Event.hpp */,
+				A860A2281CF9CFC800B94BB6 /* Filtr.cpp */,
+				A860A2291CF9CFC800B94BB6 /* Filtr.hpp */,
+				A860A22A1CF9CFC800B94BB6 /* main.cpp */,
+				A860A21D1CF9CFBE00B94BB6 /* AllFiltr.cpp */,
+				A860A21E1CF9CFBE00B94BB6 /* AllFiltr.hpp */,
 			);
-			path = calendar;
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A860A1B11CF9BB8C00B94BB6 /* calendar */ = {
+		A860A2121CF9CFB600B94BB6 /* Calendar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A860A1B91CF9BB8C00B94BB6 /* Build configuration list for PBXNativeTarget "calendar" */;
+			buildConfigurationList = A860A21A1CF9CFB600B94BB6 /* Build configuration list for PBXNativeTarget "Calendar" */;
 			buildPhases = (
-				A860A1AE1CF9BB8C00B94BB6 /* Sources */,
-				A860A1AF1CF9BB8C00B94BB6 /* Frameworks */,
-				A860A1B01CF9BB8C00B94BB6 /* CopyFiles */,
+				A860A20F1CF9CFB600B94BB6 /* Sources */,
+				A860A2101CF9CFB600B94BB6 /* Frameworks */,
+				A860A2111CF9CFB600B94BB6 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = calendar;
-			productName = calendar;
-			productReference = A860A1B21CF9BB8C00B94BB6 /* calendar */;
+			name = Calendar;
+			productName = Calendar;
+			productReference = A860A2131CF9CFB600B94BB6 /* Calendar */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A860A1AA1CF9BB8C00B94BB6 /* Project object */ = {
+		A860A20B1CF9CFB600B94BB6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Yevheniia Tsapkova";
 				TargetAttributes = {
-					A860A1B11CF9BB8C00B94BB6 = {
+					A860A2121CF9CFB600B94BB6 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
 			};
-			buildConfigurationList = A860A1AD1CF9BB8C00B94BB6 /* Build configuration list for PBXProject "calendar" */;
+			buildConfigurationList = A860A20E1CF9CFB600B94BB6 /* Build configuration list for PBXProject "Calendar" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = A860A1A91CF9BB8C00B94BB6;
-			productRefGroup = A860A1B31CF9BB8C00B94BB6 /* Products */;
+			mainGroup = A860A20A1CF9CFB600B94BB6;
+			productRefGroup = A860A2141CF9CFB600B94BB6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A860A1B11CF9BB8C00B94BB6 /* calendar */,
+				A860A2121CF9CFB600B94BB6 /* Calendar */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A860A1AE1CF9BB8C00B94BB6 /* Sources */ = {
+		A860A20F1CF9CFB600B94BB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A860A1B61CF9BB8C00B94BB6 /* main.cpp in Sources */,
+				A860A22F1CF9CFC800B94BB6 /* Filtr.cpp in Sources */,
+				A860A22E1CF9CFC800B94BB6 /* Event.cpp in Sources */,
+				A860A22D1CF9CFC800B94BB6 /* DateTimeFiltr.cpp in Sources */,
+				A860A2381CF9CFD200B94BB6 /* OrganaizerLib.cpp in Sources */,
+				A860A2371CF9CFD200B94BB6 /* NowFiltr.cpp in Sources */,
+				A860A22C1CF9CFC800B94BB6 /* DateFiltr.cpp in Sources */,
+				A860A22B1CF9CFC800B94BB6 /* CategoryFiltr.cpp in Sources */,
+				A860A2301CF9CFC800B94BB6 /* main.cpp in Sources */,
+				A860A2391CF9CFD200B94BB6 /* OutdateFiltr.cpp in Sources */,
+				A860A21F1CF9CFBE00B94BB6 /* AllFiltr.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		A860A1B71CF9BB8C00B94BB6 /* Debug */ = {
+		A860A2181CF9CFB600B94BB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -168,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		A860A1B81CF9BB8C00B94BB6 /* Release */ = {
+		A860A2191CF9CFB600B94BB6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -204,14 +262,14 @@
 			};
 			name = Release;
 		};
-		A860A1BA1CF9BB8C00B94BB6 /* Debug */ = {
+		A860A21B1CF9CFB600B94BB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		A860A1BB1CF9BB8C00B94BB6 /* Release */ = {
+		A860A21C1CF9CFB600B94BB6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -221,24 +279,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A860A1AD1CF9BB8C00B94BB6 /* Build configuration list for PBXProject "calendar" */ = {
+		A860A20E1CF9CFB600B94BB6 /* Build configuration list for PBXProject "Calendar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A860A1B71CF9BB8C00B94BB6 /* Debug */,
-				A860A1B81CF9BB8C00B94BB6 /* Release */,
+				A860A2181CF9CFB600B94BB6 /* Debug */,
+				A860A2191CF9CFB600B94BB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A860A1B91CF9BB8C00B94BB6 /* Build configuration list for PBXNativeTarget "calendar" */ = {
+		A860A21A1CF9CFB600B94BB6 /* Build configuration list for PBXNativeTarget "Calendar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A860A1BA1CF9BB8C00B94BB6 /* Debug */,
-				A860A1BB1CF9BB8C00B94BB6 /* Release */,
+				A860A21B1CF9CFB600B94BB6 /* Debug */,
+				A860A21C1CF9CFB600B94BB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A860A1AA1CF9BB8C00B94BB6 /* Project object */;
+	rootObject = A860A20B1CF9CFB600B94BB6 /* Project object */;
 }

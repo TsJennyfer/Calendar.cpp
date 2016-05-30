@@ -9,7 +9,6 @@
 #ifndef Filtr_hpp
 #define Filtr_hpp
 
-#include <stdio.h>
 #include "Event.hpp"
 
 class Filtr
